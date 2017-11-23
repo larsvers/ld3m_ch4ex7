@@ -128,6 +128,8 @@ function rollupHexPoints(data) {
 
 	}).domain([maxCount, 1]);	
 	
+	radiusScale = d3.scaleSqrt().domain([0, maxCount]).range([3.5, 15]);
+
 
 	return data;
 
